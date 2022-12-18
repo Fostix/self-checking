@@ -36,6 +36,5 @@ public class AndroidController {
         requestRepository.save(new Android().checkSendCleanComponent());
         requestRepository.save(new Android().checkRegistrationComponent());
         // more code
-        //return Android.checkRegistrationComponent();
     }
 }

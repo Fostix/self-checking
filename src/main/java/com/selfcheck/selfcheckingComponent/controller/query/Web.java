@@ -8,4 +8,5 @@ public class Web {
     public Web() {
         this.request = new Request();
     }
+    // more code
 }

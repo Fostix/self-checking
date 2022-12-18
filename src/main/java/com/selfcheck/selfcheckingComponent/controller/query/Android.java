@@ -11,7 +11,7 @@ public class Android {
 
     public Request checkGetFeedbackComponent() {
         Request request = new Request();
-        request.setErrorCode(200);  // cause don't have component for check
+        request.setErrorCode(400);  // cause don't have component for check
         //request.setErrorCode(Integer.valueOf(new Queries().get("http://localhost:8080/feedback/get").body()));
         request.setComponent("get feedback component");
         return request;

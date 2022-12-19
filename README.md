@@ -1,5 +1,3 @@
-[[/docker/automated/:user/:repo]]
-/docker/automated/:user/:repo
 - # docker
   - docker compose up grafana, mysql and other need or maybe not components.
 - # for connect with mysql

@@ -14,6 +14,7 @@ public class Request {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private Timestamp timestamp;
+    private long requestTime;
     private String component;
     private Integer errorCode;
 
@@ -37,6 +38,14 @@ public class Request {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public long getRequestTime() {
+        return requestTime;
+    }
+
+    public void setRequestTime(long requestTime) {
+        this.requestTime = requestTime;
     }
 
     public String getComponent() {

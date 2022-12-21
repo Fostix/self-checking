@@ -1,5 +1,6 @@
 package com.selfcheck.selfcheckingComponent.models;
 
+import com.selfcheck.selfcheckingComponent.exception.WrongSetRequestTimeException;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -45,6 +46,8 @@ public class Request {
     }
 
     public void setRequestTime(long requestTime) {
+        if (requestTime < 0)
+            throw new WrongSetRequestTimeException();
         this.requestTime = requestTime;
     }
 
